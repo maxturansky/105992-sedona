@@ -58,6 +58,8 @@ h3 {
 	margin: 0;
 	padding: 0 6%;
 	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	border: 3px solid orange;
 }
@@ -72,7 +74,10 @@ h3 {
 }
 
 .main-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	border: 3px solid orange;
 }
@@ -107,6 +112,8 @@ h3 {
 }
 
 .picture-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	border: 3px solid orange;
 }
@@ -127,7 +134,10 @@ h3 {
 }
 
 .advice {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	padding-top: 55px;
 	padding-bottom: 80px;
@@ -140,7 +150,10 @@ h3 {
 }
 
 .reasons {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	padding-top: 50px;
 	padding-bottom: 60px;
@@ -188,6 +201,8 @@ h3 {
 /* Стили для hotels.html */
 
 .filter-form form {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 0 6%;
 	border: 3px solid orange;
@@ -210,6 +225,8 @@ h3 {
 }
 
 .hotels-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 0 6%;
 	border: 3px solid orange;
@@ -233,6 +250,8 @@ h3 {
 }
 
 .hotel {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 0 6%;
 	border: 3px solid orange;
@@ -246,6 +265,8 @@ h3 {
 
 .hotel-main-block {
 	width: 350px;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
 	flex-grow: 1;
 	border: 3px solid red;
 }
