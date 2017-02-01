@@ -1,3 +1,11 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: inherit;
+}
+
 body {
 	font-size: 14px;
 	line-height: 1.5;
@@ -11,7 +19,6 @@ h1 {
 	line-height: 1.5;
 	color: #000000;
 	font-weight: bold;
-	font-family: 'PT Sans', Verdana, sans-serif;
 }
 
 h2 {
@@ -19,7 +26,6 @@ h2 {
 	line-height: 1.5;
 	color: #000000;
 	font-weight: bold;
-	font-family: 'PT Sans', Verdana, sans-serif;
 }
 
 h3 {
@@ -27,5 +33,224 @@ h3 {
 	line-height: 1.5;
 	color: #333333;
 	font-weight: bold;
-	font-family: 'PT Sans', Verdana, sans-serif;
+}
+
+.main-wrapper {
+	min-width: 768px;
+	max-width: 1200px;
+	margin: 0 auto;
+	border: 3px solid yellow;
+}
+
+.main-header {
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	width: 138px;
+	height: 70px;
+	margin-left: -69px;
+}
+
+.main-nav ul {
+	margin: 0;
+	padding: 0 6%;
+	list-style: none;
+	display: flex;
+	border: 3px solid orange;
+}
+
+.main-nav li {
+	width: 20%;
+	border: 3px solid red;
+}
+
+.main-nav li:nth-child(2) {
+	margin-right: auto;
+}
+
+.main-footer {
+	display: flex;
+	justify-content: space-around;
+	border: 3px solid orange;
+}
+
+.main-footer .column {
+	width: 33%;
+	border: 3px solid red;
+}
+
+/* Стили для главной */
+
+.intro {
+}
+
+.main-title-wrap {
+	padding-top: 60px;
+	padding-bottom: 65px;
+	border: 3px solid orange;
+}
+
+.main-title {
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 3px solid red;
+}
+
+.main-subtitle {
+	width: 500px;
+	margin: 0 auto;
+	border: 3px solid red;
+}
+
+.picture-block {
+	display: flex;
+	border: 3px solid orange;
+}
+
+.picture-block-info {
+	width: 33%;
+	border: 3px solid red;
+}
+
+.picture-block-img {
+	width: 67%;
+	border: 3px solid red;
+}
+
+.picture-block-img img {
+	width: 100%;
+	height: auto;
+}
+
+.advice {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 55px;
+	padding-bottom: 80px;
+	border: 3px solid orange;
+}
+
+.advice-item {
+	width: 33%;
+	border: 3px solid red;
+}
+
+.reasons {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	border: 3px solid orange;
+}
+
+.reasons-item {
+	width: 33%;
+	border: 3px solid red;
+}
+
+.search-form {
+	padding-top: 55px;
+	border: 3px solid orange;
+}
+
+.search-form-title {
+	display: block;
+	width: 440px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	border: 3px solid orange;
+}
+
+.search-form-text {
+	width: 440px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	border: 3px solid orange;
+}
+
+.search-form-btn {
+	display: block;
+	width: 568px;
+	margin: 0 auto;
+	border: 3px solid red;
+}
+
+.search-form form {
+	width: 568px;
+	margin: 0 auto;
+	border: 3px solid red;
+}
+
+/* Стили для hotels.html */
+
+.filter-form form {
+	display: flex;
+	padding: 0 6%;
+	border: 3px solid orange;
+}
+
+.filter-form-infrastructure {
+	width: 250px;
+	border: 3px solid red;
+}
+
+.filter-form-type {
+	width: 150px;
+	border: 3px solid red;
+}
+
+.filter-form-price {
+	width: 28%;
+	margin-left: auto;
+	border: 3px solid red;
+}
+
+.hotels-header {
+	display: flex;
+	padding: 0 6%;
+	border: 3px solid orange;
+}
+
+.hotels-header-found {
+	width: 140px;
+	margin-right: 25px;
+	border: 3px solid red;
+}
+
+.sorting-main {
+	width: 370px;
+	border: 3px solid red;
+}
+
+.sorting-order {
+	width: 120px;
+	margin-left: auto;
+	border: 3px solid red;
+}
+
+.hotel {
+	display: flex;
+	padding: 0 6%;
+	border: 3px solid orange;
+}
+
+.hotel-pic {
+	width: 140px;
+	margin-right: 25px;
+	border: 3px solid red;
+}
+
+.hotel-main-block {
+	width: 350px;
+	flex-grow: 1;
+	border: 3px solid red;
+}
+
+.hotel-meta {
+	width: 120px;
+	border: 3px solid red;
 }
