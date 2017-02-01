@@ -271,6 +271,18 @@ h3 {
 	border: 3px solid red;
 }
 
+.hotel-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	border: 3px solid lightgreen;
+}
+
+.hotel-info-column {
+	width: 116px;
+	border: 3px solid lightblue;
+}
+
 .hotel-meta {
 	width: 120px;
 	border: 3px solid red;
