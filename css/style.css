@@ -210,16 +210,19 @@ h3 {
 
 .filter-form-infrastructure {
 	width: 250px;
+	margin: 0;
 	border: 3px solid red;
 }
 
 .filter-form-type {
 	width: 150px;
+	margin: 0;
 	border: 3px solid red;
 }
 
 .filter-form-price {
 	width: 28%;
+	margin: 0;
 	margin-left: auto;
 	border: 3px solid red;
 }
