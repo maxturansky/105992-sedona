@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<title>Главная | Седона</title>
 	
-	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 	
 </head>
 <body>
@@ -59,7 +61,7 @@
 			<p class="main-subtitle">
 				Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
 			</p>
-		</div>
+		</div><!-- /.main-title-wrap -->
 
 		<div class="picture-block">
 			<div class="picture-block-info">
@@ -80,7 +82,7 @@
 
 		<div class="advice">
 
-			<div class="advice-item">
+			<div class="advice-item advice-item-house">
 				<b class="advice-item-title">
 					Жилье
 				</b>
@@ -89,7 +91,7 @@
 				</p>
 			</div><!-- /.advice-item -->
 
-			<div class="advice-item">
+			<div class="advice-item advice-item-food">
 				<b class="advice-item-title">
 					Еда
 				</b>
@@ -98,7 +100,7 @@
 				</p>
 			</div><!-- /.advice-item -->
 
-			<div class="advice-item">
+			<div class="advice-item advice-item-gift">
 				<b class="advice-item-title">
 					Сувениры
 				</b>
@@ -112,7 +114,7 @@
 		<div class="picture-block picture-block-left">
 			<div class="picture-block-info">
 				<h2 class="picture-block-title">
-					Там есть Мост дьявола
+					Там есть Мост&nbsp;дьявола
 				</h2>
 				<p class="picture-block-text">
 					— №2 —
@@ -136,25 +138,25 @@
 					— №3 —
 				</p>
 				<p class="reasons-item-text">
-					Все достопримечательности находятся очень близко
+					Все достопримеча&shy;тельности находятся очень близко
 				</p>
 			</div><!-- /.reason-item -->
 
 			<div class="reasons-item">
 				<b class="reasons-item-title">
-					Красивая дорога
+					Красивая<br>дорога
 				</b>
 				<p class="reasons-item-text">
 					— №4 —
 				</p>
 				<p class="reasons-item-text">
-					Ехать в Седону из Лас-Вегаса совсем не скучно!
+					Ехать в Седону из Лас&#8209;Вегаса совсем не скучно!
 				</p>
 			</div><!-- /.reason-item -->
 
 			<div class="reasons-item">
 				<b class="reasons-item-title">
-					Мало туристов
+					Мало<br>туристов
 				</b>
 				<p class="reasons-item-text">
 					— №5 —
@@ -171,7 +173,9 @@
 				Заинтересовались?
 			</b>
 			<p class="search-form-text">
-				Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+				Укажите предполагаемые даты поездки,
+				<br>
+				и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>
 			<a href="#" class="search-form-btn" title="Заполните форму, чтобы найти гостиницу в Седоне">
 				Поиск гостиницы в Седоне
@@ -179,61 +183,61 @@
 
 			<form action="https://echo.htmlacademy.ru/" method="get">
 
-				<div class="field-wrap">
+				<div class="field-wrap field-wrap-date">
 					<label for="check-in-field">
 						Дата заезда:
 					</label>
 					<div class="input-date-wrap">
-						<input type="text" name="check-in" id="check-in-field" class="input-date">
+						<input type="text" name="check-in" id="check-in-field" class="input-date" value="24 апреля 2017">
 						<button type="button" class="calendar">
 							Открыть календарь
 						</button>
 					</div>
 				</div>
 
-				<div class="field-wrap">
+				<div class="field-wrap field-wrap-date">
 					<label for="check-out-field">
 						Дата выезда:
 					</label>
 					<div class="input-date-wrap">
-						<input type="text" name="check-out" id="check-out-field" class="input-date">
+						<input type="text" name="check-out" id="check-out-field" class="input-date" value="4 июля 2017">
 						<button type="button" class="calendar">
 							Открыть календарь
 						</button>
 					</div>
 				</div>
 
-				<div class="field-wrap">
+				<div class="field-wrap field-wrap-people">
 					<label for="adult-field">
 						Взрослые:
 					</label>
 					<div class="input-quantity-wrap">
-						<button type="button" class="counter">
+						<button type="button" class="counter counter-minus">
 							Уменьшить на одного
 						</button>
-						<input type="text" name="adult" id="adult-field" class="input-quantity">
-						<button type="button" class="counter">
+						<input type="text" name="adult" id="adult-field" class="input-quantity" value="2">
+						<button type="button" class="counter counter-plus">
 							Увеличить на одного
 						</button>
 					</div>
 				</div>
 
-				<div class="field-wrap">
-					<label for="child-field">
+				<div class="field-wrap field-wrap-people">
+					<label for="child-field" class="label-children">
 						Дети:
 					</label>
 					<div class="input-quantity-wrap">
-						<button type="button" class="counter">
+						<button type="button" class="counter counter-minus">
 							Уменьшить на одного
 						</button>
-						<input type="text" name="child" id="child-field" class="input-quantity">
-						<button type="button" class="counter">
+						<input type="text" name="child" id="child-field" class="input-quantity" value="0">
+						<button type="button" class="counter counter-plus">
 							Увеличить на одного
 						</button>
 					</div>
 				</div>
 
-				<button type="submit">
+				<button type="submit" class="search-form-submit">
 					Найти
 				</button>
 			</form>
@@ -241,32 +245,32 @@
 		</div><!-- /.search-form -->
 
 		<div class="map">
-
+			
 		</div><!-- /.map -->
 
-		<footer class="main-footer">
+		<footer class="main-footer main-footer-flying">
 			<div class="column hashtag">
 				#VisitSedona
 			</div>
 			<ul class="column social">
 				<li>
-					<a href="#" target="_blank" title="Наша страница в твиттере">
+					<a href="#" class="social-icon social-icon-tw" target="_blank" title="Наша страница в твиттере">
 						Твиттер
 					</a>
 				</li>
 				<li>
-					<a href="#" target="_blank" title="Наша страница в фейсбуке">
+					<a href="#" class="social-icon social-icon-fb" target="_blank" title="Наша страница в фейсбуке">
 						Фейсбук
 					</a>
 				</li>
 				<li>
-					<a href="#" target="_blank" title="Наша страница в ВК">
+					<a href="#" class="social-icon social-icon-vk" target="_blank" title="Наша страница в ВК">
 						ВКонтакте
 					</a>
 				</li>
 			</ul>
 			<div class="column copyright">
-				Website by <a href="http://htmlacademy.ru" target="_blank" title="HTMLAcademy.ru">HTMLAcademy</a>
+				Website by <a href="http://htmlacademy.ru" class="copyright-logo" target="_blank" title="HTMLAcademy.ru">HTMLAcademy</a>
 			</div>
 		</footer>
 
