@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<title>Гостиницы | Седона</title>
 	
-	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 	
 </head>
 <body>
@@ -35,7 +37,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="hotels.html" title="Список гостиниц города Седона">
+						<a class="active">
 							Гостиницы
 						</a>
 					</li>
@@ -46,51 +48,61 @@
 		<div class="filter-form">
 			<form action="https://echo.htmlacademy.ru/" method="get">
 
-				<fieldset class="filter-form-infrastructure">
-					<legend>Инфраструктура:</legend>
-					<label>
-						<input type="checkbox" name="pool" id="pool-field">
+				<div class="filter-form-block filter-form-infrastructure">
+					<b class="filter-form-block-title">
+						Инфраструктура:
+					</b>
+						<input type="checkbox" name="pool" id="pool-field" checked>
+					<label for="pool-field">
 						Бассейн
 					</label>
-					<label>
 						<input type="checkbox" name="parking" id="parking-field">
+					<label for="parking-field">
 						Парковка
 					</label>
-					<label>
 						<input type="checkbox" name="wifi" id="wifi-field">
+					<label for="wifi-field">
 						Wi-Fi
 					</label>
-				</fieldset><!-- /Инфраструктура -->
+				</div><!-- /Инфраструктура -->
 
-				<fieldset class="filter-form-type">
-					<legend>Тип жилья:</legend>
-					<label>
-						<input type="checkbox" name="hotel" id="hotel-field">
+				<div class="filter-form-block filter-form-type">
+					<b class="filter-form-block-title">
+						Тип жилья:
+					</b>
+						<input type="checkbox" name="hotel" id="hotel-field" checked>
+					<label for="hotel-field">
 						Гостиница
 					</label>
-					<label>
-						<input type="checkbox" name="motel" id="motel-field">
+						<input type="checkbox" name="motel" id="motel-field" disabled>
+					<label for="motel-field">
 						Мотель
 					</label>
-					<label>
-						<input type="checkbox" name="apartment" id="apartment-field">
+						<input type="checkbox" name="apartment" id="apartment-field" checked disabled>
+					<label for="apartment-field">
 						Апартаменты
 					</label>
-				</fieldset><!-- /Тип жилья -->
+				</div><!-- /Тип жилья -->
 
-				<fieldset class="filter-form-price">
-					<legend>Стоимость в сутки (р):</legend>
-					<p>
-						<input type="text">
-					</p>
-					<p>
-						<input type="text">
-					</p>
-					<div class="price-indicator"></div>
+				<div class="filter-form-block filter-form-price">
+					<b class="filter-form-block-title">
+						Стоимость в сутки (р):
+					</b>
+					<div class="input-wrap">
+						<input type="text" placeholder="От 0" class="input-from">
+						<input type="text" placeholder="До 3000" class="input-to">
+					</div>
+					<div class="price-indicator">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
+					</div>
 					<button type="submit">
 						Показать
 					</button>
-				</fieldset><!-- /Стоимость в сутки -->
+				</div><!-- /Стоимость в сутки -->
 
 			</form>
 		</div><!-- /.filter-form -->
@@ -107,7 +119,7 @@
 					</b>
 					<ul>
 						<li>
-							<a href="#" title="Включить сортировку по цене">
+							<a class="active" title="Включить сортировку по цене">
 								По цене
 							</a>
 						</li>
@@ -125,12 +137,12 @@
 				</div>
 				<ul class="sorting-order">
 					<li>
-						<a href="#" class="icon" title="Включить сортировку по возрастанию">
+						<a href="#" class="sorting-order-asc" title="Включить сортировку по возрастанию">
 							По возрастанию
 						</a>
 					</li>
 					<li>
-						<a href="#" class="icon" title="Включить сортировку по убыванию">
+						<a class="sorting-order-desc active" title="Включить сортировку по убыванию">
 							По убыванию
 						</a>
 					</li>
@@ -160,7 +172,7 @@
 							<p class="hotel-price">
 								От 4000 р.
 							</p>
-							<a href="#" class="hotel-btn hotel-btn-blue">
+							<a href="#" class="hotel-btn hotel-btn-brown">
 								Забронировать
 							</a>
 						</div>
@@ -168,7 +180,6 @@
 				</div>
 				<div class="hotel-meta">
 					<div class="hotel-stars">
-						<i class="hotel-star"></i>
 						<i class="hotel-star"></i>
 						<i class="hotel-star"></i>
 						<i class="hotel-star"></i>
@@ -203,7 +214,7 @@
 							<p class="hotel-price">
 								От 3000 р.
 							</p>
-							<a href="#" class="hotel-btn hotel-btn-blue">
+							<a href="#" class="hotel-btn hotel-btn-brown">
 								Забронировать
 							</a>
 						</div>
@@ -211,7 +222,6 @@
 				</div>
 				<div class="hotel-meta">
 					<div class="hotel-stars">
-						<i class="hotel-star"></i>
 						<i class="hotel-star"></i>
 						<i class="hotel-star"></i>
 						<i class="hotel-star"></i>
@@ -245,7 +255,7 @@
 							<p class="hotel-price">
 								От 2000 р.
 							</p>
-							<a href="#" class="hotel-btn hotel-btn-blue">
+							<a href="#" class="hotel-btn hotel-btn-brown">
 								Забронировать
 							</a>
 						</div>
@@ -270,23 +280,23 @@
 			</div>
 			<ul class="column social">
 				<li>
-					<a href="#" target="_blank" title="Наша страница в твиттере">
+					<a href="#" class="social-icon social-icon-tw" target="_blank" title="Наша страница в твиттере">
 						Твиттер
 					</a>
 				</li>
 				<li>
-					<a href="#" target="_blank" title="Наша страница в фейсбуке">
+					<a href="#" class="social-icon social-icon-fb" target="_blank" title="Наша страница в фейсбуке">
 						Фейсбук
 					</a>
 				</li>
 				<li>
-					<a href="#" target="_blank" title="Наша страница в ВК">
+					<a href="#" class="social-icon social-icon-vk" target="_blank" title="Наша страница в ВК">
 						ВКонтакте
 					</a>
 				</li>
 			</ul>
 			<div class="column copyright">
-				Website by <a href="http://htmlacademy.ru" target="_blank" title="HTMLAcademy.ru">HTMLAcademy</a>
+				Website by <a href="http://htmlacademy.ru" class="copyright-logo" target="_blank" title="HTMLAcademy.ru">HTMLAcademy</a>
 			</div>
 		</footer>
 
