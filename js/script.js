@@ -4,8 +4,9 @@ document.body.classList.remove('no-js');
 // Объявление переменных
 var button = document.querySelector(".search-form-btn");
 var form = document.querySelector(".search-form-form");
-var input = form.querySelectorAll("input");
 
+var checkIn = form.querySelector("[name=check-in]");
+var checkOut = form.querySelector("[name=check-out]");
 var adult = form.querySelector("[name=adult]");
 var child = form.querySelector("[name=child]");
 
@@ -33,7 +34,7 @@ button.addEventListener("click", function (event) {
 
 // Запрет на отправку формы, если поля не заполнены
 form.addEventListener("submit", function (event) {
-	if (!input.value) {
+	if (!checkIn.value || !checkOut.value || !adult.value || !child.value) {
 		event.preventDefault();
 		form.classList.remove("search-form-form-error");
 		form.offsetWidth = form.offsetWidth;
