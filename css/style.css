@@ -346,13 +346,15 @@ img {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	position: absolute;
-	z-index: 30;
+	z-index: 5;
 	opacity: 0;
-	transition: opacity .05s;
+	transition: opacity .5s,
+		visibility .5s;
 }
 
 .no-js .search-form-form {
 	opacity: 1;
+	z-index: 30;
 }
 
 @keyframes fly {
@@ -376,11 +378,14 @@ img {
 .search-form-form-visible {
 	opacity: 1;
 	animation: fly .5s;
+	z-index: 30;
 }
 
 .search-form-form-hidden {
 	opacity: 0;
+	visibility: hidden;
 	animation: fly-back .5s;
+	z-index: 30;
 }
 
 @keyframes shake {
@@ -1078,7 +1083,7 @@ img {
 .main-footer .hashtag {
 	font-weight: bold;
 	font-size: 21px;
-	line-height: ;
+	line-height: 25px;
 	text-align: center;
 	color: #000000;
 }

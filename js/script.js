@@ -17,11 +17,13 @@ var storageChild = localStorage.getItem("child");
 button.addEventListener("click", function (event) {
 	event.preventDefault();
 	
+	form.classList.remove("search-form-form-error");
+	
 	if (form.classList.contains("search-form-form-visible")) {
-		form.classList.remove("search-form-form-visible");
+		form.classList.remove("search-form-form-visible");form.offsetWidth = form.offsetWidth;
 		form.classList.add("search-form-form-hidden");
 	} else {
-		form.classList.remove("search-form-form-hidden");
+		form.classList.remove("search-form-form-hidden");form.offsetWidth = form.offsetWidth;
 		form.classList.add("search-form-form-visible");
 	}
 	
