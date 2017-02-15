@@ -1,3 +1,7 @@
+// Стили спрайта
+
+// Не подключены к страницам, оставлены для удобства
+
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;

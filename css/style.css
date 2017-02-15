@@ -330,7 +330,7 @@ img {
 	color: rgba(255, 255, 255, .3);
 }
 
-.search-form form {
+.search-form-form {
 	width: 568px;
 	margin: 0 auto;
 	left: 50%;
@@ -347,6 +347,42 @@ img {
 	justify-content: space-between;
 	position: absolute;
 	z-index: 30;
+	opacity: 0;
+	transition: opacity .25s;
+}
+
+.no-js .search-form-form {
+	opacity: 1;
+}
+
+@keyframes fly {
+	0% {
+		transform: translateY(-86px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+.search-form-form-visible {
+	opacity: 1;
+	animation: fly .5s;
+}
+
+@keyframes shake {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-10px);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(10px);
+	}
+}
+
+.search-form-form-error {
+	animation: shake .5s;
 }
 
 .search-form input {
@@ -530,7 +566,7 @@ img {
 }
 
 .map {
-	background: #cbdda9 url('../img/map.jpg') no-repeat;
+	background: #cbdda9 url('../img/map.png') no-repeat;
 	min-height: 593px;
 	position: relative;
 	z-index: 10;

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	
 </head>
-<body>
+<body class="no-js">
 
 	<div class="main-wrapper">
 
@@ -177,18 +177,18 @@
 				<br>
 				и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>
-			<a href="#" class="search-form-btn" title="Заполните форму, чтобы найти гостиницу в Седоне">
+			<a href="search-form.html" class="search-form-btn" title="Заполните форму, чтобы найти гостиницу в Седоне">
 				Поиск гостиницы в Седоне
 			</a>
 
-			<form action="https://echo.htmlacademy.ru/" method="get">
+			<form class="search-form-form" action="https://echo.htmlacademy.ru/" method="get">
 
 				<div class="field-wrap field-wrap-date">
 					<label for="check-in-field">
 						Дата заезда:
 					</label>
 					<div class="input-date-wrap">
-						<input type="text" name="check-in" id="check-in-field" class="input-date" value="24 апреля 2017">
+						<input type="text" name="check-in" id="check-in-field" class="input-date" placeholder="24 апреля 2017">
 						<button type="button" class="calendar">
 							Открыть календарь
 						</button>
@@ -200,7 +200,7 @@
 						Дата выезда:
 					</label>
 					<div class="input-date-wrap">
-						<input type="text" name="check-out" id="check-out-field" class="input-date" value="4 июля 2017">
+						<input type="text" name="check-out" id="check-out-field" class="input-date" placeholder="4 июля 2017">
 						<button type="button" class="calendar">
 							Открыть календарь
 						</button>
@@ -215,7 +215,7 @@
 						<button type="button" class="counter counter-minus">
 							Уменьшить на одного
 						</button>
-						<input type="text" name="adult" id="adult-field" class="input-quantity" value="2">
+						<input type="text" name="adult" id="adult-field" class="input-quantity" placeholder="2">
 						<button type="button" class="counter counter-plus">
 							Увеличить на одного
 						</button>
@@ -230,7 +230,7 @@
 						<button type="button" class="counter counter-minus">
 							Уменьшить на одного
 						</button>
-						<input type="text" name="child" id="child-field" class="input-quantity" value="0">
+						<input type="text" name="child" id="child-field" class="input-quantity" placeholder="0">
 						<button type="button" class="counter counter-plus">
 							Увеличить на одного
 						</button>
@@ -274,7 +274,9 @@
 
 	</div><!-- /.main-wrapper -->
 	
+	<!-- Подключение яндекс-карты -->
 	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=7wHDSGMXm7nrgy5nGZtW3YOs8aSgqyvz&amp;width=100%25&amp;height=593&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false&id=yandex-map"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>
