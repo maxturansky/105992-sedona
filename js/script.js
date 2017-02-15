@@ -15,9 +15,16 @@ var storageChild = localStorage.getItem("child");
 // Появление формы поиска при клике на кнопку
 button.addEventListener("click", function (event) {
 	event.preventDefault();
-	form.classList.toggle("search-form-form-visible");
 	
-	if (storageAdult.value || storageChild.value) {
+	if (form.classList.contains("search-form-form-visible")) {
+		form.classList.remove("search-form-form-visible");
+		form.classList.add("search-form-form-hidden");
+	} else {
+		form.classList.remove("search-form-form-hidden");
+		form.classList.add("search-form-form-visible");
+	}
+	
+	if (storageAdult || storageChild) {
 		adult.value = storageAdult;
 		child.value = storageChild;
 	}

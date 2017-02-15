@@ -348,7 +348,7 @@ img {
 	position: absolute;
 	z-index: 30;
 	opacity: 0;
-	transition: opacity .25s;
+	transition: opacity .05s;
 }
 
 .no-js .search-form-form {
@@ -364,9 +364,23 @@ img {
 	}
 }
 
+@keyframes fly-back {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-86px);
+	}
+}
+
 .search-form-form-visible {
 	opacity: 1;
 	animation: fly .5s;
+}
+
+.search-form-form-hidden {
+	opacity: 0;
+	animation: fly-back .5s;
 }
 
 @keyframes shake {
