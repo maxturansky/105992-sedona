@@ -6,8 +6,8 @@ var button = document.querySelector(".search-form-btn");
 var form = document.querySelector(".search-form-form");
 var input = form.querySelectorAll("input");
 
-var adult = form.querySelector("[name='adult']");
-var child = form.querySelector("[name='child']");
+var adult = form.querySelector("[name=adult]");
+var child = form.querySelector("[name=child]");
 
 var storageAdult = localStorage.getItem("adult");
 var storageChild = localStorage.getItem("child");
@@ -17,11 +17,8 @@ button.addEventListener("click", function (event) {
 	event.preventDefault();
 	form.classList.toggle("search-form-form-visible");
 	
-	if (storageAdult.value) {
+	if (storageAdult.value || storageChild.value) {
 		adult.value = storageAdult;
-	}
-	
-	if (storageChild.value) {
 		child.value = storageChild;
 	}
 	
