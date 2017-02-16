@@ -14,6 +14,7 @@ body {
 	font-family: "PT Sans", Verdana, sans-serif;
 	background-color: #f2f2f2;
 	text-transform: uppercase;
+	min-width: 768px;
 }
 
 img {
@@ -881,6 +882,7 @@ img {
 	border: 8px solid #ffffff;
 	box-sizing: content-box;
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, .2);
+	top: 0;
 }
 
 .price-indicator .range-toggle:hover {
@@ -1019,6 +1021,7 @@ img {
 .sorting-order-asc::before,
 .sorting-order-desc::before {
 	display: inline-block;
+	vertical-align: baseline;
 	content: "";
 	width: 0;
 	height: 0;
@@ -1126,6 +1129,7 @@ img {
 
 .hotel-btn {
 	display: inline-block;
+	vertical-align: baseline;
 	text-decoration: none;
 	color: #ffffff;
 	padding: 3px 17px;
@@ -1192,6 +1196,7 @@ img {
 .hotel-ratio {
 	margin: 0;
 	display: inline-block;
+	vertical-align: baseline;
 	background-color: #f2f2f2;
 	color: #666666;
 	padding: 3px 14px;
@@ -1318,6 +1323,7 @@ img {
 	height: 39px;
 	background-position: -90px -91px;
 	display: inline-block;
+	vertical-align: baseline;
 	margin-left: 8px;
 }
 
