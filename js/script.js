@@ -1,5 +1,5 @@
 // Проверка работы javascript
-document.body.classList.remove('no-js');
+document.body.classList.remove("no-js");
 
 // Объявление переменных
 var button = document.querySelector(".search-form-btn");

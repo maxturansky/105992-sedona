@@ -11,9 +11,10 @@ body {
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;
-	font-family: 'PT Sans', Verdana, sans-serif;
+	font-family: "PT Sans", Verdana, sans-serif;
 	background-color: #f2f2f2;
 	text-transform: uppercase;
+	width: 768px;
 }
 
 img {
@@ -22,8 +23,6 @@ img {
 }
 
 .main-wrapper {
-	min-width: 768px;
-	max-width: 1200px;
 	width: 768px;
 	margin: 0 auto;
 	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
@@ -91,7 +90,7 @@ img {
 .intro {
 	min-height: 512px;
 	background-color: #dfecf5;
-	background: url('../img/intro-bg.jpg') no-repeat top center;
+	background: url("../img/intro-bg.jpg") no-repeat top center;
 	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -107,22 +106,22 @@ img {
 }
 
 .intro::before {
-	content: '';
+	content: "";
 	display: block;
 	width: 458px;
 	height: 352px;
 	margin: 0 auto;
 	margin-top: 76px;
-	background: url('../img/intro-text.png') no-repeat 50% 50%;
+	background: url("../img/intro-text.png") no-repeat 50% 50%;
 }
 
 .intro::after {
 	display: block;
 	margin-top: auto;
-	content: '';
+	content: "";
 	width: 100%;
 	height: 36px;
-	background: url('../img/intro-decoration.png') no-repeat;
+	background: url("../img/intro-decoration.png") no-repeat;
 }
 
 .main-title-wrap {
@@ -235,8 +234,8 @@ img {
 
 .advice-item-title::before {
 	display: block;
-	content: '';
-	background-image: url('../img/sprite.png');
+	content: "";
+	background-image: url("../img/sprite.png");
 	margin-bottom: 32px;
 }
 
@@ -483,6 +482,19 @@ img {
 	text-transform: inherit;
 }
 
+.search-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #000000;
+}
+.search-form input::-moz-placeholder { /* Firefox 19+ */
+	color: #000000;
+}
+.search-form input:-ms-input-placeholder { /* IE 10+ */
+	color: #000000;
+}
+.search-form input:-moz-placeholder { /* Firefox 18- */
+	color: #000000;
+}
+
 .search-form input:hover {
 	background-color: #ebebeb;
 	border: 2px solid #ebebeb;
@@ -539,12 +551,12 @@ img {
 
 .search-form .calendar::before {
 	display: block;
-	content: '';
+	content: "";
 	position: absolute;
 	top: 8px;
 	right: 9px;
 	border: 0;
-	background-image: url('../img/sprite.png');
+	background-image: url("../img/sprite.png");
 	width: 21px;
 	height: 22px;
 	background-position: -286px -37px;
@@ -589,9 +601,9 @@ img {
 
 .search-form .counter::before {
 	display: block;
-	content: '';
+	content: "";
 	position: absolute;
-	background-image: url('../img/sprite.png');
+	background-image: url("../img/sprite.png");
 }
 
 .search-form .counter-minus {
@@ -661,7 +673,7 @@ img {
 }
 
 .map {
-	background: #cbdda9 url('../img/map.png') no-repeat;
+	background: #cbdda9 url("../img/map.png") no-repeat;
 	min-height: 593px;
 	position: relative;
 	z-index: 10;
@@ -677,7 +689,7 @@ img {
 	padding: 29px 46px 0;
 	background-color: #84aece;
 	color: #ffffff;
-	background: url('../img/hotels-bg.jpg') no-repeat;
+	background: url("../img/hotels-bg.jpg") no-repeat;
 }
 
 .filter-form-block {
@@ -734,10 +746,10 @@ img {
 	left: 0;
 	top: -1px;
 	display: block;
-	content: '';
+	content: "";
 	width: 22px;
 	height: 22px;
-	background-image: url('../img/sprite.png');
+	background-image: url("../img/sprite.png");
 	background-position: -309px -90px;
 	cursor: pointer;
 }
@@ -783,7 +795,7 @@ img {
 
 .filter-form-price .input-wrap::after {
 	display: block;
-	content: '';
+	content: "";
 	width: 2px;
 	height: 22px;
 	position: absolute;
@@ -793,8 +805,7 @@ img {
 	z-index: 10;
 }
 
-.filter-form-price .input-from,
-.filter-form-price .input-to {
+.filter-form-price .input-price {
 	width: 50%;
 	border: 2px solid #ffffff;
 	background-color: transparent;
@@ -808,13 +819,29 @@ img {
 	z-index: 20;
 }
 
-.filter-form-price .input-from {
+.filter-form-price .input-price::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #ffffff;
+}
+
+.filter-form-price .input-price::-moz-placeholder { /* Firefox 19+ */
+	color: #ffffff;
+}
+
+.filter-form-price .input-price:-ms-input-placeholder { /* IE 10+ */
+	color: #ffffff;
+}
+
+.filter-form-price .input-price:-moz-placeholder { /* Firefox 18- */
+	color: #ffffff;
+}
+
+.filter-form-price .input-price-min {
 	border-right: 0;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
 
-.filter-form-price .input-to {
+.filter-form-price .input-price-max {
 	border-left: 0;
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
@@ -993,7 +1020,7 @@ img {
 .sorting-order-asc::before,
 .sorting-order-desc::before {
 	display: inline-block;
-	content: '';
+	content: "";
 	width: 0;
 	height: 0;
 	border-left: 5px solid transparent;
@@ -1155,7 +1182,7 @@ img {
 }
 
 .hotel-star {
-	background-image: url('../img/sprite.png');
+	background-image: url("../img/sprite.png");
 	display: block;
 	width: 18px;
 	height: 17px;
@@ -1227,9 +1254,9 @@ img {
 }
 
 .social-icon::before {
-	background-image: url('../img/sprite.png');
+	background-image: url("../img/sprite.png");
 	position: absolute;
-	content: '';
+	content: "";
 	display: block;
 }
 
@@ -1287,7 +1314,7 @@ img {
 
 .main-footer .copyright-logo {
 	font-size: 0;
-	background-image: url('../img/sprite.png');
+	background-image: url("../img/sprite.png");
 	width: 113px;
 	height: 39px;
 	background-position: -90px -91px;
