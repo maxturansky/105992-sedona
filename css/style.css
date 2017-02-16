@@ -90,7 +90,7 @@ img {
 .intro {
 	min-height: 512px;
 	background-color: #dfecf5;
-	background: url("../img/intro-bg.jpg") no-repeat top center;
+	background: #dfecf5 url("../img/intro-bg.jpg") no-repeat top center;
 	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -683,6 +683,7 @@ img {
 }
 
 .map {
+	background-color: #cbdda9;
 	background: #cbdda9 url("../img/map.png") no-repeat;
 	min-height: 593px;
 	position: relative;
@@ -699,7 +700,7 @@ img {
 	padding: 29px 46px 0;
 	background-color: #84aece;
 	color: #ffffff;
-	background: url("../img/hotels-bg.jpg") no-repeat;
+	background: #84aece url("../img/hotels-bg.jpg") no-repeat;
 }
 
 .filter-form-block {
