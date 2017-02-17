@@ -151,6 +151,8 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	background-color: #81b3d2;
+	color: #ffffff;
 }
 
 .picture-block-left .picture-block-img {
@@ -164,8 +166,6 @@ img {
 	padding: 0 35px;
 	padding-top: 48px;
 	padding-bottom: 20px;
-	background-color: #81b3d2;
-	color: #ffffff;
 	text-align: center;
 }
 
@@ -281,11 +281,12 @@ img {
 
 .reasons-item-title {
 	display: block;
-	margin: 0;
+	max-width: 110px;
+	margin: 0 auto;
+	margin-bottom: 23px;
 	color: #000000;
 	font-size: 21px;
 	line-height: 21px;
-	margin-bottom: 23px;
 }
 
 .reasons-item-text {
@@ -701,6 +702,7 @@ img {
 	background-color: #84aece;
 	color: #ffffff;
 	background: #84aece url("../img/hotels-bg.jpg") no-repeat;
+	background-size: cover;
 }
 
 .filter-form-block {
